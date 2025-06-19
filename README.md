@@ -1,11 +1,18 @@
 # md5_rsa_tool
+
+=========================================================================
+
 Data testing and analysis require frequent encryption of sensitive user information. The original plaintext information is converted into unreadable strings through encryption algorithms to achieve the purpose of encryption. Common encryption algorithms include MD5, SHA256, RSA, etc.
+
+=========================================================================
 
 #### 简单来说
 
 1.MD5、SHA256都是哈希算法，python中都来自hashlib包，主要是将一段字符串通过一定的加密算法转换成另一种字符串，因具有不可逆的特点，从而保证了数据的安全。
 
 2.RSA是一种非对称加密算法，对极大整数做因数分解的难度决定了 RSA 算法的可靠性，假如有人找到一种快速因数分解的算法的话，那么用 RSA 加密的信息的可靠性就肯定会极度下降，目前看来找到这样的算法的可能性非常小。
+
+=========================================================================
 
 
 以下是对 MD5、SHA256 和 RSA 三种加密算法优缺点及适用场景的详细分析：
@@ -67,6 +74,7 @@ MD5	哈希	低	极快	文件校验、非安全索引
 SHA256	哈希	高	较快	密码存储、数字签名、区块链
 
 RSA	非对称加密	高	极慢	密钥交换、数字签名、小数据加密
+
 
 #### 组合使用示例：
 * HTTPS：RSA 用于握手阶段交换 AES 密钥，SHA256 用于验证证书和数据完整性。
